@@ -3,7 +3,10 @@ import asyncio
 import aiohttp
 import json
 
-# Ensure the GEMINI_API_KEY is set in your environment variables
+from dotenv import load_dotenv
+
+load_dotenv('.env')
+
 api_key = os.getenv("GEMINI_API_KEY")
 if not api_key:
     raise ValueError("GEMINI_API_KEY environment variable is not set.")
@@ -55,7 +58,6 @@ async def generate_content_concurrently(prompts):
 prompts = [
     "Explain how AI works in a few words",
     "What is the future of quantum computing?",
-    "Tell me about the latest advancements in AI research."
 ]
 
 # 执行并发请求
