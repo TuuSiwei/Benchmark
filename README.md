@@ -2,7 +2,7 @@
 
 ## Asynchronous call openai and gemini api
 
-## install(recommend uv)
+## Install
 
 ```bash
 uv init -p 3.10
