@@ -1,5 +1,3 @@
-# Benchmark
-
 ## Asynchronous call openai and gemini api
 
 ## Install
